@@ -1,9 +1,11 @@
 # Neural Network from Scratch
-This repository contains code for Artificial Neural Network trained from scratch using NumPy. Scikit-Learn is used just for train-test split and finding accuracy score.
-To know how backpropogation works, check [this](https://youtu.be/tIeHLnjs5U8)
+
+## Introduction
+This repository contains code for Artificial Neural Network trained from scratch using NumPy. Scikit-Learn is used just for train-test split and finding accuracy score. To know how backpropogation works, check [this](https://youtu.be/tIeHLnjs5U8).
+
 ---
 ## Features
-- Multilayer Neural Network (L Layers)
+- Multilayer Neural Network (L Layers) 
 - Multiclass Neural Network (N classes)
 - Batching
 - Cross-Entropy Loss with Softmax
@@ -22,7 +24,8 @@ To know how backpropogation works, check [this](https://youtu.be/tIeHLnjs5U8)
 [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset has been used. The dataset is included in this repository in Apparel directory.
 The dataset contains 60,000 examples - each example is a 28x28 grayscale image, belonging to one of the 10 following class labels.
 -    Class labels:
-        Label	Description
+        | Label | Description
+        | ----- | ----- |
             0 	T-shirt/top
             1	Trouser
             2	Pullover
@@ -53,8 +56,15 @@ label, pixel1, pixel2, pixel3, ..., pixel784
 ---
 ## How to run
 ```bash
-git clone https://gitlab.com/nitin.nilesh/neural-network-from-scratch.git
-cd neural-network-from-scratch
+git clone https://github.com/Pi-Rasp/Neural-Network-From-Scratch.git
+cd Neural-Network-From-Scratch
+mkdir Apparel
+```
+
+Download the Fashion MNIST dataset from [here (Google Drive)](https://drive.google.com/drive/folders/17qjjivM3rdCoxB9VHqC9qifbRMETDe2x?usp=share_link)
+Unzip the downloaded file and keep ```apparel-test.csv``` and ```apparel-trainval.csv``` into the ```Apparel``` folder.
+
+```bash
 python3 neural_network.py --epochs 10 --num_classes 10 --activation_fn relu --hidden_layers [512, 256]
 ```
 Hidden layer size can be set in a python list. For example ```--hidden layers [512, 256]``` means two hidden layers with 512 and 256 nodes respectively.
