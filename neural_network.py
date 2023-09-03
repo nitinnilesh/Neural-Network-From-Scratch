@@ -404,7 +404,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", type=int, default=16, help="batch size")
     parser.add_argument("--activation_fn", type=str, default="relu", help="Activation Function")
     parser.add_argument("--lr", type=float, default=1e-4, help="Learning Rate")
-    parser.add_argument("--hidden_layers", type=list, default=[100], help="hideen layers size")
+    parser.add_argument("--hidden_layers", type=str, default='100', help="hideen layers size")
     parser.add_argument("--weights_path", type=str, default=None, help="Path to saved weights")    
     opt = parser.parse_args()
     print(opt)
@@ -430,7 +430,7 @@ if __name__ == "__main__":
     activation_fn = opt.activation_fn
     epochs = opt.epochs
     lr = opt.lr
-    hidden_layers = opt.hidden_layers
+    hidden_layers = [int(i) for i in opt.hidden_layers.split(',')]
     size = [X.shape[0]] + hidden_layers + [num_classes]
 
     # Training
