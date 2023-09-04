@@ -21,8 +21,7 @@ This repository contains code for Artificial Neural Network trained from scratch
 ---
 
 ## Dataset Used
-[Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset has been used. The dataset is included in this repository in Apparel directory.
-The dataset contains 60,000 examples - each example is a 28x28 grayscale image, belonging to one of the 10 following class labels.
+[Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset has been used. The dataset contains 60,000 examples - each example is a 28x28 grayscale image, belonging to one of the 10 following class labels.
 -    Class labels:
         | Label | Description
         | ----- | ----- |
@@ -58,7 +57,7 @@ label, pixel1, pixel2, pixel3, ..., pixel784
 ---
 ## How to run
 ```bash
-git clone https://github.com/Pi-Rasp/Neural-Network-From-Scratch.git
+git clone https://github.com/nitinnilesh/Neural-Network-From-Scratch.git
 cd Neural-Network-From-Scratch
 mkdir Apparel
 ```
